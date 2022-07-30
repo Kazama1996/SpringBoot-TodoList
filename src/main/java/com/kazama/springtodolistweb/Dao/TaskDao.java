@@ -7,4 +7,6 @@ import com.kazama.springtodolistweb.model.Task;
 public interface TaskDao {
 
     public Integer addTask(TaskRequest taskRequest);
+
+    public void deleteTaskById(Integer taskId);
 }

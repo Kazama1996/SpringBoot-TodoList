@@ -20,8 +20,6 @@ public class TaskDaoImpl implements TaskDao {
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
-
-
     public Integer addTask(TaskRequest taskRequest){
 
         String sql = "INSERT INTO task(task_name , created_date , deadline) VALUES (:task_name ,:created_date, :deadline)";
@@ -38,5 +36,16 @@ public class TaskDaoImpl implements TaskDao {
         int key = keyHolder.getKey().intValue();
 
         return key ;
+    }
+
+    public void deleteTaskById(Integer taskId){
+        String sql = "DELETE FROM task  WHERE task_id =:taskId";
+
+        Map<String,Object> map = new HashMap<>();
+
+        map.put("taskId", taskId);
+
+        namedParameterJdbcTemplate.update(sql,map);
+
     }
 }

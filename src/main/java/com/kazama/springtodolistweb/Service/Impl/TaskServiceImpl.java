@@ -3,9 +3,7 @@ package com.kazama.springtodolistweb.Service.Impl;
 import com.kazama.springtodolistweb.Dao.TaskDao;
 import com.kazama.springtodolistweb.Service.TaskService;
 import com.kazama.springtodolistweb.dto.TaskRequest;
-import com.kazama.springtodolistweb.model.Task;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 

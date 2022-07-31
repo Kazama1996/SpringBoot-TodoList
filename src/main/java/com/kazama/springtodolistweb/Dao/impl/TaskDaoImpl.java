@@ -2,7 +2,6 @@ package com.kazama.springtodolistweb.Dao.impl;
 
 import com.kazama.springtodolistweb.Dao.TaskDao;
 import com.kazama.springtodolistweb.dto.TaskRequest;
-import com.kazama.springtodolistweb.model.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

@@ -8,9 +8,9 @@ public class Task {
     private Integer list_id ;
     private Integer user_id ;
     private String task_name ;
-    private String Description;
     private Date created_date ;
-    private Date last_modified_date;
+
+    private Date deadline;
 
     public Integer getTask_id() {
         return task_id;
@@ -44,14 +44,6 @@ public class Task {
         this.task_name = task_name;
     }
 
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
-    }
-
     public Date getCreated_date() {
         return created_date;
     }
@@ -60,11 +52,11 @@ public class Task {
         this.created_date = created_date;
     }
 
-    public Date getLast_modified_date() {
-        return last_modified_date;
+    public Date getDeadline() {
+        return deadline;
     }
 
-    public void setLast_modified_date(Date last_modified_date) {
-        this.last_modified_date = last_modified_date;
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
     }
 }
